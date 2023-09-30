@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  grid-area: header;
+  height: 600px;
+  background-image: url("https://www.elitehotels.co.uk/themes/custom/elitehotels/images/logos/logo_eh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header a:hover {
+  color: rgb(250, 137, 194);
+}
+.header .header-links {
+  text-decoration: none;
+  padding: 35px;
+  margin: 40px;
+  font-size: 20px;
+}
+#slider{
+  grid-area: slider;
+
+}
+main{
+  grid-area: main;
+
+}
+footer{
+  grid-area: fooger;
+
+}
+
+.button-section1 {
+    border-radius: 26px;
+  background-color: #d4bb2c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.section1-image {
+  background-image: url("https://www.elitehotels.co.uk/themes/custom/elitehotels/images/logos/logo_eh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.section1 .section1-heading {
+  
+  text-align: center;
+  text-shadow: #0f151b;
+  margin-bottom: 60px;
+  position: absolute;
+  bottom: -580px;
+  left: 350px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "slider "
+    "main "
+    "footer";
+  grid-gap: 10px;
+  background-color: #5e7281;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+}
+.section1-heading {
+  font-size: 60px;
+  color: white;
+  border-color: black;
+  text-align: center;
+}
