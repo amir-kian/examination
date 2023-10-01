@@ -3,20 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
+header {
   grid-area: header;
-  height: 600px;
-  background-image: url("https://www.elitehotels.co.uk/themes/custom/elitehotels/images/logos/logo_eh.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+background-color: rgb(230, 230, 215);
 }
 
-.header a:hover {
+header a:hover {
   color: rgb(250, 137, 194);
 }
-.header .header-links {
+header .header-links {
   text-decoration: none;
   padding: 35px;
   margin: 40px;
@@ -26,6 +21,13 @@
   grid-area: slider;
 
 }
+header >*{
+  display: inline-block;
+}
+header nav ul li{
+  display: inline-block;
+  text-decoration: none;
+}
 main{
   grid-area: main;
 
@@ -33,6 +35,9 @@ main{
 footer{
   grid-area: fooger;
 
+}
+body{
+  overflow-x: hidden;
 }
 
 .button-section1 {
@@ -67,14 +72,12 @@ footer{
 
 .grid-container {
   display: grid;
+  grid-template-columns:1fr;
   grid-template-areas:
-    "header "
-    "slider "
-    "main "
+    "header"
+    "slider"
+    "main"
     "footer";
-  grid-gap: 10px;
-  background-color: #5e7281;
-  padding: 10px;
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -86,4 +89,8 @@ footer{
   color: white;
   border-color: black;
   text-align: center;
+}
+.img-responsive{
+  width: 100%;
+  height: auto;
 }
